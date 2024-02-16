@@ -20,7 +20,6 @@ struct LoginButtons: View {
     var body: some View{
         Button(action: action ?? {} , label: {
             Text(buttonText)
-            
                 .frame(width: 290, height: 18)
                 .foregroundStyle(Color(buttonTextColor))
                 .bold()
@@ -28,7 +27,7 @@ struct LoginButtons: View {
                 .background(Color(buttonColor))
                 .clipShape(Capsule())
                 .overlay(RoundedRectangle(cornerRadius: 25)
-                    .stroke(buttonBorder ? Color.white : Color.clear, lineWidth: 1))
+                .stroke(buttonBorder ? Color.white : Color.clear, lineWidth: 1))
         })
     }
 }
