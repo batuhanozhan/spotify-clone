@@ -20,7 +20,6 @@ struct LoginView: View {
                     .scaledToFit()
                     .offset(y: -200)
                 
-                
                 VStack(spacing: 20){
                     //Spotify Logo
                     Image("spotify-brand-logo")
@@ -31,8 +30,6 @@ struct LoginView: View {
                         .foregroundStyle(Color.white)
                         .font(.largeTitle)
                         .bold()
-                    
-                    
                     
                     //Sign Up Free button
                     
@@ -57,7 +54,6 @@ struct LoginView: View {
                             .foregroundStyle(Color(.white))
                             .font(.system(size: 20))
                             .bold()
-                        
                     }
                 }
             }

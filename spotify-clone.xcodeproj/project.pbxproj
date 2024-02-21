@@ -14,8 +14,10 @@
 		7B2A482D2B78394700D49F41 /* spotify_cloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A482C2B78394700D49F41 /* spotify_cloneTests.swift */; };
 		7B2A48372B78394700D49F41 /* spotify_cloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A48362B78394700D49F41 /* spotify_cloneUITests.swift */; };
 		7B2A48392B78394700D49F41 /* spotify_cloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A48382B78394700D49F41 /* spotify_cloneUITestsLaunchTests.swift */; };
-		7B2A48482B78479100D49F41 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A48472B78479100D49F41 /* LoginView.swift */; };
+		7B2A48482B78479100D49F41 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A48472B78479100D49F41 /* AuthView.swift */; };
 		7B2A484A2B78574600D49F41 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A48492B78574600D49F41 /* Buttons.swift */; };
+		7B7478702B7FC08800E864D6 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B74786F2B7FC08800E864D6 /* RadioButton.swift */; };
+		7B75BF502B7A92EA00CEB5A1 /* EmailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B75BF4F2B7A92EA00CEB5A1 /* EmailPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,10 @@
 		7B2A48322B78394700D49F41 /* spotify-cloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spotify-cloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2A48362B78394700D49F41 /* spotify_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotify_cloneUITests.swift; sourceTree = "<group>"; };
 		7B2A48382B78394700D49F41 /* spotify_cloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotify_cloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7B2A48472B78479100D49F41 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7B2A48472B78479100D49F41 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		7B2A48492B78574600D49F41 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		7B74786F2B7FC08800E864D6 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		7B75BF4F2B7A92EA00CEB5A1 /* EmailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			children = (
 				7B2A48462B78474600D49F41 /* Register Page */,
 				7B2A48452B78473E00D49F41 /* Login Page */,
+				7B74786E2B7FC05A00E864D6 /* Components */,
 				7B2A481A2B78394500D49F41 /* spotify_cloneApp.swift */,
 				7B2A481C2B78394500D49F41 /* ContentView.swift */,
 				7B2A481E2B78394700D49F41 /* Assets.xcassets */,
@@ -138,8 +143,7 @@
 		7B2A48452B78473E00D49F41 /* Login Page */ = {
 			isa = PBXGroup;
 			children = (
-				7B2A48472B78479100D49F41 /* LoginView.swift */,
-				7B2A48492B78574600D49F41 /* Buttons.swift */,
+				7B2A48472B78479100D49F41 /* AuthView.swift */,
 			);
 			path = "Login Page";
 			sourceTree = "<group>";
@@ -147,8 +151,18 @@
 		7B2A48462B78474600D49F41 /* Register Page */ = {
 			isa = PBXGroup;
 			children = (
+				7B75BF4F2B7A92EA00CEB5A1 /* EmailPage.swift */,
 			);
 			path = "Register Page";
+			sourceTree = "<group>";
+		};
+		7B74786E2B7FC05A00E864D6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7B2A48492B78574600D49F41 /* Buttons.swift */,
+				7B74786F2B7FC08800E864D6 /* RadioButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +181,8 @@
 			dependencies = (
 			);
 			name = "spotify-clone";
+			packageProductDependencies = (
+			);
 			productName = "spotify-clone";
 			productReference = 7B2A48172B78394500D49F41 /* spotify-clone.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +255,8 @@
 				Base,
 			);
 			mainGroup = 7B2A480E2B78394500D49F41;
+			packageReferences = (
+			);
 			productRefGroup = 7B2A48182B78394500D49F41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,8 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2A48482B78479100D49F41 /* LoginView.swift in Sources */,
+				7B75BF502B7A92EA00CEB5A1 /* EmailPage.swift in Sources */,
+				7B2A48482B78479100D49F41 /* AuthView.swift in Sources */,
 				7B2A481D2B78394500D49F41 /* ContentView.swift in Sources */,
+				7B7478702B7FC08800E864D6 /* RadioButton.swift in Sources */,
 				7B2A481B2B78394500D49F41 /* spotify_cloneApp.swift in Sources */,
 				7B2A484A2B78574600D49F41 /* Buttons.swift in Sources */,
 			);
